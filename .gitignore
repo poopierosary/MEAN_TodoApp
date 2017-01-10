@@ -1,3 +1,13 @@
-//ignore files from being pushed to git.
-node_modules
-bower
+//ignore node_modules from being pushed.
+node_modules/
+client/node_modules
+
+//ignore bower components and typings from being pushed.
+client/bower_components/
+client/typings/
+
+//ignore all JavaScript and JavaScript.Map files.
+client/app/**.js
+client/app/**.js.map
+
+
