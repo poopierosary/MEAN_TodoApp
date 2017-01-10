@@ -9,5 +9,3 @@ client/typings/
 //ignore all JavaScript and JavaScript.Map files.
 client/app/**.js
 client/app/**.js.map
-
-
