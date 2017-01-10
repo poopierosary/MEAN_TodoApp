@@ -1,11 +1,11 @@
-import { Component, OnInit} from '@angular/core';
-import {TodoService} from '../services/todo.services';
-import {Todo} from './todo';
+import { Component, OnInit } from '@angular/core';
+import { TodoService } from '../services/todo.services';
+import { Todo } from './todo';
 
 @Component({
   moduleId: module.id,
   selector: 'todos',
-  templateUrl: 'todos.component.html'
+  templateUrl: '../views/components/todos.component.html'
 })
 
 export class TodosComponent implements OnInit {
@@ -77,12 +77,11 @@ export class TodosComponent implements OnInit {
   deleteTodo(todo){
     var todos = this.todos;
 
-
     this._todoService.deleteTodo(todo._id)
       .subscribe(data => {
         if(data.n == 1){
           for(var i = 0; i < todos.length; i++){
-            if(todos[i]._id == todo._id){
+            if(todo[i]._id == todo._id){
               todos.splice(i, 1);
             }
           }
