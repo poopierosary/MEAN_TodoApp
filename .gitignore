@@ -5,7 +5,3 @@ client/node_modules
 //ignore bower components and typings from being pushed.
 client/bower_components/
 client/typings/
-
-//ignore all JavaScript and JavaScript.Map files.
-client/app/**.js
-client/app/**.js.map
