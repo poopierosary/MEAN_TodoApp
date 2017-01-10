@@ -1,4 +1,8 @@
 //ignore files from being pushed to git.
-node_modules
-bower_components
-typings
+node_modules/
+bower_components/
+typings/
+
+//ignore all JavaScript files.
+**.js
+
